@@ -116,12 +116,12 @@
 		5AC0B8CB219D66D800B9D865 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				5AC0B8D0219D6CBB00B9D865 /* YDSQLite.h */,
 				5AC0B903219D883B00B9D865 /* SQL */,
 				5AC0B8F6219D865800B9D865 /* Extension */,
 				5AC0B8F5219D864F00B9D865 /* Dao */,
 				5AC0B8F4219D863D00B9D865 /* Utils */,
 				5AC0B8F3219D862500B9D865 /* DB */,
-				5AC0B8D0219D6CBB00B9D865 /* YDSQLite.h */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
