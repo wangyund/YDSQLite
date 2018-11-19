@@ -1,5 +1,7 @@
-# YDSQLite
 允顶ObjectC版SQLite管理
 
 
-Git上传测试
+Pod添加方式：
+
+pod 'YDSQLite' ,:git => 'https://github.com/wangyund/YDSQLite.git'
+
