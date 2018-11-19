@@ -13,24 +13,15 @@ Pod::Spec.new do |s|
   s.source_files = 'YDSQLite/Framework/YDSQLite.h'
   
   pch_AF = <<-EOS
-#ifndef TARGET_OS_IOS
-  #define TARGET_OS_IOS TARGET_OS_IPHONE
-#endif
 
-#ifndef TARGET_OS_WATCH
-  #define TARGET_OS_WATCH 0
-#endif
-
-#ifndef TARGET_OS_TV
-  #define TARGET_OS_TV 0
-#endif
 EOS
-  #s.prefix_header_contents = pch_AF
   
-  #s.ios.deployment_target = '7.0'
-  #s.osx.deployment_target = '10.9'
-  #s.watchos.deployment_target = '2.0'
-  #s.tvos.deployment_target = '9.0'
+  s.subspec 'Extension' do |ss|
+    ss.source_files = 'YDSQLite/Framework/Extension/.{h,m}'
+    ss.public_header_files = 'YDSQLite/Framework/Extension/.{h}'
+
+  end
+
   
   s.subspec 'SQL' do |ss|
     ss.source_files = 'YDSQLite/Framework/SQL/*/.{h,m}'
@@ -38,12 +29,7 @@ EOS
 
   end
 
-  s.subspec 'Extension' do |ss|
-    ss.source_files = 'YDSQLite/Framework/Extension/.{h,m}'
-    ss.public_header_files = 'YDSQLite/Framework/Extension/.{h}'
-
-  end
-
+  
   s.subspec 'Dao' do |ss|
     ss.source_files = 'YDSQLite/Framework/Dao/.{h,m}'
     ss.public_header_files = 'YDSQLite/Framework/Dao/.{h}'
