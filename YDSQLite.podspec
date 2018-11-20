@@ -17,32 +17,32 @@ Pod::Spec.new do |s|
 EOS
   
   s.subspec 'Extension' do |ss|
-    ss.source_files = 'YDSQLite/Framework/Extension/.{h,m}'
-    ss.public_header_files = 'YDSQLite/Framework/Extension/.{h}'
+    ss.source_files = 'YDSQLite/Framework/Extension/*.{h,m}'
+    ss.public_header_files = 'YDSQLite/Framework/Extension/*.{h}'
 
   end
 
   
   s.subspec 'SQL' do |ss|
-    ss.source_files = 'YDSQLite/Framework/SQL/*/.{h,m}'
-    ss.public_header_files = 'YDSQLite/Framework/SQL/*/.{h}'
+    ss.source_files = 'YDSQLite/Framework/SQL/**/*.{h,m}'
+    ss.public_header_files = 'YDSQLite/Framework/SQL/**/*.{h}'
 
   end
 
   
   s.subspec 'Dao' do |ss|
-    ss.source_files = 'YDSQLite/Framework/Dao/.{h,m}'
-    ss.public_header_files = 'YDSQLite/Framework/Dao/.{h}'
+    ss.source_files = 'YDSQLite/Framework/Dao/*.{h,m}'
+    ss.public_header_files = 'YDSQLite/Framework/Dao/*.{h}'
 
   end
 
   s.subspec 'Utils' do |ss|
-    ss.source_files = 'YDSQLite/Framework/Utils/.{h,m}'
-    ss.public_header_files = 'YDSQLite/Framework/Utils/.{h}'
+    ss.source_files = 'YDSQLite/Framework/Utils/*.{h,m}'
+    ss.public_header_files = 'YDSQLite/Framework/Utils/*.{h}'
   end
 
   s.subspec 'DB' do |ss|
-    ss.public_header_files = 'YDSQLite/Framework/DB/*/.{h}'
-    ss.source_files = 'YDSQLite/Framework/DB/*/.{h,m}'
+    ss.public_header_files = 'YDSQLite/Framework/DB/**/*.{h}'
+    ss.source_files = 'YDSQLite/Framework/DB/**/*.{h,m}'
   end
 end
